@@ -6,13 +6,15 @@ def index ()->rx.components:
     return rx.center(
         rx.box(
             rx.text(
-                "Bienvenido a EduProgress",
+                "¡Bienvenido a EduProgress!",
                 size="8",
                 weight="bold",
-                color="blak",
-                margin_top="-4em",
-                margin_bottom="4em",
+                color="black",
+                margin_top="-1em",
+                margin_bottom="em",
             ),
+            rx.text("Como estudiante mira tus rendimientos academicos",weight="bold",size="3",align="center",margin_top="1em"),
+            rx.text("en un solo lugar",align="center",size="3",weight="bold"),
             rx.vstack(
                  rx.button(
                     "INICIAR SESION", 
@@ -37,10 +39,14 @@ def index ()->rx.components:
                     border_radius="30px",
                 ),
                 spacing="4",
+                margin_top="4em"
             ),
         ),
         height="100vh",
-        bg="linear-gradient(to bottom, #4facfe, #00f2f3)",
+        background_image="url('https://st.depositphotos.com/1001564/2470/i/450/depositphotos_24704059-stock-photo-background.jpg')",
+        background_size="cover",
+        background_position="center",
+        #bg="linear-gradient(to bottom, #4facfe, #00f2f3)",
     )
 
 
