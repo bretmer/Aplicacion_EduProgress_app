@@ -11,7 +11,13 @@ def register_page():
                 rx.input(placeholder="Correo electrónico", size="2", width="75%", autocomplete="email"),
                 rx.input(placeholder="Contraseña", type_="password", size="2", width="75%"),
                 rx.input(placeholder="Confirmar contraseña", type_="password", size="2", width="75%"),
-                rx.button("Registrarme", color_scheme="blue", size="3",width="75%"),
+                rx.button(
+                    "Registrarme", 
+                    color_scheme="blue", 
+                    size="3",
+                    width="75%",
+                    on_click=lambda: rx.redirect("/sidebar")
+                ),
                 spacing="3",
                 width="100%",
                 align_items="center",

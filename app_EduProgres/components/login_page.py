@@ -7,7 +7,13 @@ def login_page():
                 rx.heading("Iniciar Sesión", size="8", color="blue"),
                 rx.input(placeholder="Usuario o correo electronico",size="3",width="75%"),
                 rx.input(placeholder="Contraseña", type_="password",size="3",width="75%"),
-                rx.button("Iniciar sesion", color_scheme="blue",size="3", width="75%"),
+                rx.button(
+                    "Iniciar sesion", 
+                    color_scheme="blue",
+                    size="3", 
+                    width="75%",
+                    on_click=lambda: rx.redirect("/sidebar")
+                ),
                 rx.text("¿Olvidaste tu contraseña?", color="blue", size="1", cursor="pointer"),
                 rx.link("¿No tienes una cuenta? Regístrate aquí", href="/register_page"),
                 #spacing="4",

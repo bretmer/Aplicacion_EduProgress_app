@@ -1,6 +1,8 @@
 import reflex as rx
-from .componentes.login_page import login_page
-from .componentes.register_page import register_page
+from .components.login_page import login_page
+from .components.register_page import register_page
+from .home.main import main
+
 
 def index ()->rx.components:
     return rx.center(
@@ -54,4 +56,6 @@ app = rx.App()
 app.add_page(index, route="/")
 app.add_page(login_page, route="/login_page")
 app.add_page(register_page, route="/register_page")
+app.add_page(main, route="/")
+
 
