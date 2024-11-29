@@ -3,6 +3,7 @@ from .components.login_page import login_page
 from .components.register_page import register_page
 from .home.main import main
 from .page.principal import principal
+from .screen.mainPrincipal import mainPrincipal
 
 def index ()->rx.components:
     return rx.center(
@@ -58,5 +59,6 @@ app.add_page(login_page, route="/login_page")
 app.add_page(register_page, route="/register_page")
 app.add_page(main, route="/main")
 app.add_page(principal, route="/principal")
+app.add_page(mainPrincipal, route="/mainPrincipal")
 
 

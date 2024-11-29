@@ -9,6 +9,7 @@ def encabezado():
                 rx.menu.content(
                     rx.menu.item(rx.link("Teacher",href="/principal")),
                     rx.menu.item(rx.link("Estudent", href="/main")),
+                    rx.menu.item(rx.link("Padre", href="/mainPrincipal")),
                     rx.menu.separator(),
                     rx.menu.item("Archive", shortcut="⌘ N"),
                     rx.menu.sub(

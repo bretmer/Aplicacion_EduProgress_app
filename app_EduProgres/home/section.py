@@ -1,5 +1,13 @@
 import reflex as rx
 
+data = [
+        {"mi variable": "Page A", "value": 2400},
+        {"name": "Page B", "value": 1398},
+        {"name": "Page C", "value": 9800},
+        {"name": "Page D", "value": 3908},
+        {"name": "Page E", "value": 4800},
+        {"name": "Page F", "value": 3800},
+],
 def main_body():
     return rx.vstack(
             rx.box(

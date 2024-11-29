@@ -1,17 +1,17 @@
 import reflex as rx
-def header():
+def encabezadoBarra():
     return rx.hstack(
         rx.hstack(
             rx.menu.root(
                 rx.menu.trigger(
-                    rx.button(rx.icon("menu"), variant="soft",color="black"),
+                    rx.button(rx.icon("menu"), variant="solid",color="black"),
                 ),
                 rx.menu.content(
                     rx.menu.item(rx.link("Teacher",href="/principal")),
                     rx.menu.item(rx.link("Estudent", href="/main")),
                     rx.menu.item(rx.link("Padre", href="/mainPrincipal")),
                     rx.menu.separator(),
-                    rx.menu.item("Archive"),
+                    rx.menu.item("Archive", shortcut="⌘ N"),
                     rx.menu.sub(
                         rx.menu.sub_trigger("More"),
                         rx.menu.sub_content(
@@ -23,7 +23,7 @@ def header():
                     ),
                     rx.menu.separator(),
                     rx.menu.item("Share"),
-                    rx.menu.item("Edit", shortcut=""),
+                    rx.menu.item("Edit"),
                     rx.menu.separator(),
                     rx.menu.item("Delete", shortcut="⌘ ⌫", color="red"),
                 ),
@@ -35,7 +35,7 @@ def header():
                 rx.menu.trigger(
                     rx.button(
                         rx.text(
-                            "Mis calificaciones",
+                            "Tarea creadas",
                             size="4",
                             weight="medium",
                             color="white"
@@ -48,16 +48,16 @@ def header():
                     ),
                 ),
                 rx.menu.content(
-                    rx.menu.item("Por Materia"),
-                    rx.menu.item("Por Tareas"),
-                    rx.menu.item("Por Examenes"),
+                    rx.menu.item("Tareas recientes"),
+                    rx.menu.item("Tareas pasadas"),
+                    rx.menu.item("Todas las tareas"),
                 ),
             ),
             rx.menu.root(
                 rx.menu.trigger(
                     rx.button(
                         rx.text(
-                            "Progreso academico",
+                            "Examenes creados",
                             size="4",
                             weight="medium",
                             color="white"
@@ -70,16 +70,16 @@ def header():
                     ),
                 ),
                 rx.menu.content(
-                    rx.menu.item("Graficas"),
-                    rx.menu.item("Barras"),
-                    rx.menu.item("Informe de progreso")
+                    rx.menu.item("Examenes recientes"),
+                    rx.menu.item("Examenes pasados"),
+                    rx.menu.item("Todos los examenes"),
                 ),
             ),
             rx.menu.root(
                 rx.menu.trigger(
                     rx.button(
                         rx.text(
-                            "Tareas",
+                            "Evaluaciones creadas",
                             size="4",
                             weight="medium",
                             color="white"
@@ -92,16 +92,16 @@ def header():
                     ),
                 ),
                 rx.menu.content(
+                    rx.menu.item("Recientes"),
                     rx.menu.item("Pendientes"),
-                    rx.menu.item("Nuevas"),
-                    rx.menu.item("Terminadas")
+                    rx.menu.item("Pasadas")
                 ),
             ),
             rx.menu.root(
                 rx.menu.trigger(
                     rx.button(
                         rx.text(
-                            "Examenes",
+                            "Gestion de Informes",
                             size="4",
                             weight="medium",
                             color="white"
@@ -116,29 +116,8 @@ def header():
                 rx.menu.content(
                     rx.menu.item("Pendientes"),
                     rx.menu.item("Nuevos"),
-                    rx.menu.item("Terminados"),
-                ),
-            ),
-            rx.menu.root(
-                rx.menu.trigger(
-                    rx.button(
-                        rx.text(
-                            "Notificaciones",
-                            size="4",
-                            weight="medium",
-                            color="white"
-                        ),
-                        rx.icon("chevron-down"),
-                        weight="medium",
-                        variant="ghost",
-                        size="3",
-                        color="white"
-                    ),
-                ),
-                rx.menu.content(
-                    rx.menu.item("De tareas"),
-                    rx.menu.item("De examenes"),
-                    rx.menu.item("Avances academicos")
+                    rx.menu.item("Recientes"),
+                    rx.menu.item("Descargas "),
                 ),
             ),
             spacing="7",
