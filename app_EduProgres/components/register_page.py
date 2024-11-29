@@ -16,7 +16,7 @@ def register_page():
                     color_scheme="blue", 
                     size="3",
                     width="75%",
-                    on_click=lambda: rx.redirect("/sidebar")
+                    on_click=lambda: rx.redirect("/main"),
                 ),
                 spacing="3",
                 width="100%",

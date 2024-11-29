@@ -1,6 +1,6 @@
 import reflex as rx
 
-def sidebar():
+def barra():
     return rx.container(
         rx.vstack(
             rx.heading("Opciones", size="lg", color="black", mb=5, weight="bold"),
@@ -24,5 +24,3 @@ def sidebar():
         top="61px",
         left="0",
     )
-
-

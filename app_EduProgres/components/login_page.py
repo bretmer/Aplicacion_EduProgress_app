@@ -12,9 +12,10 @@ def login_page():
                     color_scheme="blue",
                     size="3", 
                     width="75%",
-                    on_click=lambda: rx.redirect("/sidebar")
+                    on_click=lambda: rx.redirect("/main",),
+                    
                 ),
-                rx.text("¿Olvidaste tu contraseña?", color="blue", size="1", cursor="pointer"),
+                rx.text("¿Olvidaste tu contraseña?",href="/#", color="blue", size="1", cursor="pointer"),
                 rx.link("¿No tienes una cuenta? Regístrate aquí", href="/register_page"),
                 #spacing="4",
                 width="100%",
