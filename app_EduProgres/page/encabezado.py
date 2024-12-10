@@ -44,7 +44,8 @@ def encabezado():
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
@@ -66,7 +67,8 @@ def encabezado():
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
@@ -88,7 +90,8 @@ def encabezado():
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
@@ -110,7 +113,8 @@ def encabezado():
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
@@ -120,7 +124,7 @@ def encabezado():
                     rx.menu.item("Descargas "),
                 ),
             ),
-            spacing="7",
+            spacing="9",
             margin_left="150px"
         ),
         #justify="between",

@@ -38,13 +38,15 @@ def header():
                             "Mis calificaciones",
                             size="4",
                             weight="medium",
-                            color="white"
+                            color="white",
+                
                         ),
                         rx.icon("chevron-down"),
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
@@ -66,7 +68,8 @@ def header():
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
@@ -88,7 +91,8 @@ def header():
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
@@ -110,7 +114,8 @@ def header():
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
@@ -132,7 +137,8 @@ def header():
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
@@ -141,7 +147,7 @@ def header():
                     rx.menu.item("Avances academicos")
                 ),
             ),
-            spacing="7",
+            spacing="9",
             margin_left="150px"
         ),
         #justify="between",

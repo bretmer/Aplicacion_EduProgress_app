@@ -35,7 +35,7 @@ def encabezadoBarra():
                 rx.menu.trigger(
                     rx.button(
                         rx.text(
-                            "Tarea creadas",
+                            "Notificaciones",
                             size="4",
                             weight="medium",
                             color="white"
@@ -44,20 +44,21 @@ def encabezadoBarra():
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
-                    rx.menu.item("Tareas recientes"),
-                    rx.menu.item("Tareas pasadas"),
-                    rx.menu.item("Todas las tareas"),
+                    rx.menu.item("Recibidas"),
+                    rx.menu.item("leidas"),
+                    rx.menu.item("Todas"),
                 ),
             ),
             rx.menu.root(
                 rx.menu.trigger(
                     rx.button(
                         rx.text(
-                            "Examenes creados",
+                            "Rendimiento academico",
                             size="4",
                             weight="medium",
                             color="white"
@@ -66,20 +67,43 @@ def encabezadoBarra():
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
-                    rx.menu.item("Examenes recientes"),
-                    rx.menu.item("Examenes pasados"),
-                    rx.menu.item("Todos los examenes"),
+                    rx.menu.item("En graficas"),
+                    rx.menu.item("Informacion Visual"),
+                ),
+            ),    
+            rx.menu.root(
+                rx.menu.trigger(
+                    rx.button(
+                        rx.text(
+                            "Informes",
+                            size="4",
+                            weight="medium",
+                            color="white"
+                        ),
+                        rx.icon("chevron-down"),
+                        weight="medium",
+                        variant="ghost",
+                        size="3",
+                        color="white",
+                        border="2px solid white"
+                    ),
+                ),
+                rx.menu.content(
+                    rx.menu.item("Informe Semanal"),
+                    rx.menu.item("Informe Mensual"),
+                    rx.menu.item("Informe  Academico de mi hijo")
                 ),
             ),
             rx.menu.root(
                 rx.menu.trigger(
                     rx.button(
                         rx.text(
-                            "Evaluaciones creadas",
+                            "Recordatorios",
                             size="4",
                             weight="medium",
                             color="white"
@@ -88,39 +112,17 @@ def encabezadoBarra():
                         weight="medium",
                         variant="ghost",
                         size="3",
-                        color="white"
+                        color="white",
+                        border="2px solid white"
                     ),
                 ),
                 rx.menu.content(
-                    rx.menu.item("Recientes"),
-                    rx.menu.item("Pendientes"),
-                    rx.menu.item("Pasadas")
+                    rx.menu.item("De trabajos de entrega de su hijo"),
+                    rx.menu.item("Calificaciones"),
+                    rx.menu.item("Proyectos finales de su hijo"),
                 ),
             ),
-            rx.menu.root(
-                rx.menu.trigger(
-                    rx.button(
-                        rx.text(
-                            "Gestion de Informes",
-                            size="4",
-                            weight="medium",
-                            color="white"
-                        ),
-                        rx.icon("chevron-down"),
-                        weight="medium",
-                        variant="ghost",
-                        size="3",
-                        color="white"
-                    ),
-                ),
-                rx.menu.content(
-                    rx.menu.item("Pendientes"),
-                    rx.menu.item("Nuevos"),
-                    rx.menu.item("Recientes"),
-                    rx.menu.item("Descargas "),
-                ),
-            ),
-            spacing="7",
+            spacing="9",
             margin_left="150px"
         ),
         #justify="between",

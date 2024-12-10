@@ -1,13 +1,16 @@
 import reflex as rx
 
-data = [
-        {"mi variable": "Page A", "value": 2400},
-        {"name": "Page B", "value": 1398},
-        {"name": "Page C", "value": 9800},
-        {"name": "Page D", "value": 3908},
-        {"name": "Page E", "value": 4800},
-        {"name": "Page F", "value": 3800},
-],
+class State(rx.State):
+    tarea_enviada: bool = False
+    examen_enviado: bool = False
+
+    def enviar_tarea(self):
+        self.tarea_enviada = True
+
+    def enviar_examen(self):
+        self.examen_enviado = True
+
+
 def main_body():
     return rx.vstack(
             rx.box(
@@ -65,12 +68,17 @@ def main_body():
                         rx.text_area(placeholder="Descripcion"),
                         rx.button(
                             "Enviar tareas",
+                            on_click=State.enviar_tarea,
                             color="white",
                             width="100%",
                             padding="10px",
                             margin_top="1em"
                         ),
                         #margin_left="40px",
+                    ),
+                    rx.cond(
+                        State.tarea_enviada,
+                        rx.text("Su tarea ha sido enviada con éxito.", color="green", mt=3),
                     ),
                     margin_bottom="20px",
                     margin_left="70px",
